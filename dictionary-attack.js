@@ -1,5 +1,5 @@
 var wordsList = [];
-var userInput = document.getElementById("pw").value;
+var userInput = document.getElementById("pw").innerHTML.value;
 var input = //
 
 function init() {
