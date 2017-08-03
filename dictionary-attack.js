@@ -21,8 +21,10 @@ window.onload = init;
 function checkPassword() {
   var userInput = document.getElementById("pw").value;
   for (var i = 0; i < wordList.length; i++) { 
-    if (userInput == wordsList[i]) {      
-      document.getElementById("results").innerHTML = "This password is too weak! Don't use a word from the dictionary.";
+    if (userInput = wordsList[i]) {      
+      var str = document.getElementById("results").innerHTML;
+      var res = str.replace("Is your password strong enough?", "This password is too weak! Don't use a word from the dictionary.");
+      document.getElementById("results").innerHTML = res;
       break;
     }
   }
