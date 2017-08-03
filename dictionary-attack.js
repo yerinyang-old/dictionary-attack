@@ -20,9 +20,9 @@ window.onload = init;
 // "results" is the id for the after input //
 function checkPassword() {
   var userInput = document.getElementById("pw").value;
-  for (var i = 0; i <= wordList.length; i++) { 
+  for (var i = 0; i < wordList.length; i++) { 
     if (userInput == wordsList[i]) {      
-      document.getElementById("demo").innerHTML = "This password is too weak! Don't use a word from the dictionary.";
+      document.getElementById("results").innerHTML = "This password is too weak! Don't use a word from the dictionary.";
       break;
     }
   }
