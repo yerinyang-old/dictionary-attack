@@ -1,6 +1,5 @@
 var wordsList = [];
-var userInput = document.getElementById("pw").innerHTML.value;
-var input = //
+document.getElementById("pw").value = var userInput;
 
 function init() {
   // Load the words from the dictionary text file to wordsList
