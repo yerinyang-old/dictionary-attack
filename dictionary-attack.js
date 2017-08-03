@@ -22,7 +22,7 @@ window.onload = init;
 // "results" is the id for the after input //
 function checkPassword() {
   var str = document.getElementById("results").innerHTML;
-  var res = str.replace(, "pineapple");
+  var res = str.replace("", "pineapple");
   document.getElementById("results").innerHTML = res;
 
 }
