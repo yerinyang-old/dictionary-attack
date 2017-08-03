@@ -21,10 +21,13 @@ window.onload = init;
 // "results" is the id for the after input //
 function checkPassword() {
   for (var i = 0; i < 10; i++) {
-    if (userInput == wordsList) {      
+    if (userInput = wordsList) {      
       var str = document.getElementById("results").innerHTML;
       var res = str.replace("Is your password strong enough?", "No.");
       document.getElementById("results").innerHTML = res;
+    }
+    else {
+      document.write(hmm);
     }
   }
 }
