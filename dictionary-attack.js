@@ -1,6 +1,5 @@
 var wordsList = [];
-
-// ^ empty words list //
+var userInput = pw;
 
 function init() {
   // Load the words from the dictionary text file to wordsList
@@ -21,8 +20,11 @@ window.onload = init;
 // "pw" is the id for user input //
 // "results" is the id for the after input //
 function checkPassword() {
-  var str = document.getElementById("results").innerHTML;
-  var res = str.replace("Is your password strong enough?", "pineapple");
-  document.getElementById("results").innerHTML = res;
-
+  for (var i = 0; i < 10; i++) {
+    if (userInput == wordsList) {      
+      var str = document.getElementById("results").innerHTML;
+      var res = str.replace("Is your password strong enough?", "No.");
+      document.getElementById("results").innerHTML = res;
+    }
+  }
 }
