@@ -21,7 +21,7 @@ window.onload = init;
 // "pw" is the id for user input //
 // "results" is the id for the after input //
 function checkPassword() {
-  for (var i = 0; i < wordList.length; i++) { 
+  for (var i = 0; i <= wordList.length; i++) { 
     if (userInput == wordsList[i]) {      
       var str = document.getElementById("results").innerHTML;
       var res = str.replace("Is your password strong enough?", "No.");
