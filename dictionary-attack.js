@@ -1,5 +1,7 @@
 var wordsList = [];
 
+// ^ empty words list //
+
 function init() {
   // Load the words from the dictionary text file to wordsList
   var wordsFile = "https://raw.githubusercontent.com/GirlsFirst/SIP-2017/master/Unit2_Applications/dictionary-attack/dictionary.txt?token=ADcVhZjRMd86ZdhPE2jVvIaJdQdzLA6Yks5YvvVSwA%3D%3D";
@@ -13,7 +15,14 @@ function init() {
 window.onload = init;
 
 /* ADD YOUR CODE BELOW */
-
+// check password against dictionary //
+// if password matches dictionary, then print to user that the password is too weak - "This password is too weak! Don't use a word from the dictionary" //
+// if password is close to a word in the dictionary, then print to user that the password is too similar to a word in the dictionary = "This password is too weak! It's too similar to a word from the dictionary." //
+// "pw" is the id for user input //
+// "results" is the id for the after input //
 function checkPassword() {
+  var str = document.getElementById("results").innerHTML;
+  var res = str.replace(pw, "pineapple");
+  document.getElementById("results").innerHTML = res;
 
 }
