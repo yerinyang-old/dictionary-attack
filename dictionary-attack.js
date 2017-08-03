@@ -26,10 +26,10 @@ function checkPassword() {
       var res = str.replace("Is your password strong enough?", "No.");
       document.getElementById("results").innerHTML = res;
     }
-//     else {
-//       var str = document.getElementById("results").innerHTML;
-//       var res = str.replace("Is your password strong enough?", "Yes!");
-//       document.getElementById("results").innerHTML = res;
-//     }
+    elseif (i == wordList.length) {
+      var str = document.getElementById("results").innerHTML;
+      var res = str.replace("Is your password strong enough?", "Yes!");
+      document.getElementById("results").innerHTML = res;
+    }
   }
 }
