@@ -1,5 +1,6 @@
 var wordsList = [];
 var userInput = document.getElementById("pw").value;
+var input = //
 
 function init() {
   // Load the words from the dictionary text file to wordsList
@@ -31,5 +32,7 @@ function checkPassword() {
       var res = str.replace("Is your password strong enough?", "Yes!");
       document.getElementById("results").innerHTML = res;
     }
+    else {
+      return null;
   }
 }
