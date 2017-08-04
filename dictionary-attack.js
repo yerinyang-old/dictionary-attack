@@ -24,23 +24,15 @@ function checkPassword() {
   for (var i = 0; i < wordsList.length; i++) { 
     if (userInput == wordsList[i]) { break; } 
         test = true;   
-        console.log("If statement worked");
-        console.log(i);
    }
   if (test == true) {
       document.getElementById("result").innerHTML = "Your password is too weak!";
-      console.log("for loop broke and password is in dictionary");
-      console.log(i);
    } 
   else if (test == false) {
       document.getElementById("result").innerHTML = "Your password is strong!";
-      console.log("for loop broke and password is not in dictionary");
-      console.log(i);
    }
   else {
       document.getElementById("result").innerHTML = "Oops! Something went wrong..."; 
-      console.log("idk what happened ;-;");
-      console.log(i);
    }
  } 
   
