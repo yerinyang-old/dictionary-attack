@@ -17,7 +17,7 @@ window.onload = init;
 // if password matches dictionary, then print to user that the password is too weak - "This password is too weak! Don't use a word from the dictionary" //
 // if password is close to a word in the dictionary, then print to user that the password is too similar to a word in the dictionary = "This password is too weak! It's too similar to a word from the dictionary." //
 // "pw" is the id for user input //
-// "results" is the id for the after input //
+// "result" is the id for the after input //
 function checkPassword() {
   var userInput = document.getElementById("pw").value;
   for (var i = 0; i < wordsList.length; i++) { 
