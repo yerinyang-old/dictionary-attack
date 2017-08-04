@@ -33,5 +33,5 @@ function checkPassword() {
   }
   else {
     document.getElementById("result").innerHTML = "Your password is strong!";
-}
+} 
   
