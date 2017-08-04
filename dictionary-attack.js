@@ -24,7 +24,6 @@ function checkPassword() {
   for (var i = 0; i < wordsList.length; i++) { 
     if (userInput == wordsList[i]) { break; } 
         test = true;   
-     }
    }
   if (test == true) {
       document.getElementById("result").innerHTML = "Your password is too weak!";
