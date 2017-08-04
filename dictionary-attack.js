@@ -21,19 +21,20 @@ window.onload = init;
 function checkPassword() {
   document.getElementById("calculating").innerHTML = "Calculating...";
   var userInput = document.getElementById("pw").value;
-  var test = False
+  var test = false;
   for (var i = 0; i < wordsList.length; i++) { 
     if (userInput == wordsList[i]) {     
-        var test = True
+        var test = true;
         break;    
      }
-  }
-  if (var test = True) {
+   }
+  if (var test = true) {
       document.getElementById("calculating").innerHTML = "Calculation Complete!";
       document.getElementById("result").innerHTML = "Your password is too weak!";
-  } else if (var test != True) {
+   } 
+  else if (var test != true) {
       document.getElementById("calculating").innerHTML = "Calculation Complete!";
       document.getElementById("result").innerHTML = "Your password is strong!";
-  }
+   }
 } 
   
