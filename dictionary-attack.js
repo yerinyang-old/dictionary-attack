@@ -28,7 +28,7 @@ function checkPassword() {
       break;
     } 
   }
-  if (test = false) {
+  if (check = false) {
     document.getElementById("result").innerHTML = "Strong password!!!";
   }
 }
