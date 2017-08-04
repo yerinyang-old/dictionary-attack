@@ -24,17 +24,16 @@ function checkPassword() {
   var test = False
   for (var i = 0; i < wordsList.length; i++) { 
     if (userInput == wordsList[i]) {     
-      var test = True
-      break;    
+        var test = True
+        break;    
      }
   }
   if (var test = True) {
-    document.getElementById("calculating").innerHTML = "Calculation Complete!";
-    document.getElementById("result").innerHTML = "Your password is too weak!";
-  }
-  elseif (var test != True) {
-    document.getElementById("calculating").innerHTML = "Calculation Complete!";
-    document.getElementById("result").innerHTML = "Your password is strong!";
+      document.getElementById("calculating").innerHTML = "Calculation Complete!";
+      document.getElementById("result").innerHTML = "Your password is too weak!";
+  } else if (var test != True) {
+      document.getElementById("calculating").innerHTML = "Calculation Complete!";
+      document.getElementById("result").innerHTML = "Your password is strong!";
   }
 } 
   
