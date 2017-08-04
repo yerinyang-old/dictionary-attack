@@ -30,8 +30,11 @@ function checkPassword() {
   if (var test = true) {
       document.getElementById("result").innerHTML = "Your password is too weak!";
    } 
-  else if (var test != true) {
+  else if (var test = false) {
       document.getElementById("result").innerHTML = "Your password is strong!";
    }
-} 
+  else {
+      document.getElementById("result").innerHTML = "Oops! Something went wrong...";      
+   }
+ } 
   
