@@ -22,7 +22,7 @@ function checkPassword() {
   var userInput = document.getElementById("pw").value;
   for (var i = 0; i < wordList.length; i++) { 
     if (userInput = wordsList[i]) {     
-      document.getElementById("results").innerHTML = "Your password is too weak!";
+      document.getElementById("result").innerHTML = "Your password is too weak!";
       break;
     }
   }
