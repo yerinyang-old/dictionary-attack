@@ -19,7 +19,7 @@ window.onload = init;
 // "pw" is the id for user input //
 // "result" is the id for the after input //
 function checkPassword() {
-  document.getElementById("result").innerHTML = "Calculating...";
+  document.getElementById("calculating").innerHTML = "Calculating...";
   var userInput = document.getElementById("pw").value;
   var test = False
   for (var i = 0; i < wordsList.length; i++) { 
@@ -31,7 +31,8 @@ function checkPassword() {
   if (var test = True) {
     document.getElementById("result").innerHTML = "Your password is too weak!";
   }
-  else {
+  elseif (var test != True) {
     document.getElementById("result").innerHTML = "Your password is strong!";
+  }
 } 
   
