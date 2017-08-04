@@ -29,9 +29,11 @@ function checkPassword() {
      }
   }
   if (var test = True) {
+    document.getElementById("calculating").innerHTML = "";
     document.getElementById("result").innerHTML = "Your password is too weak!";
   }
   elseif (var test != True) {
+    document.getElementById("calculating").innerHTML = "";
     document.getElementById("result").innerHTML = "Your password is strong!";
   }
 } 
