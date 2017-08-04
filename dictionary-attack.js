@@ -24,7 +24,7 @@ function checkPassword() {
     if (userInput = wordsList[i]) {     
       document.getElementById("result").innerHTML = "Your password is too weak!";
       break;    
-    }
-  }
+     }
+   }
 }
   
