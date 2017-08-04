@@ -20,19 +20,15 @@ window.onload = init;
 // "result" is the id for the after input //
 function checkPassword() {
   var userInput = document.getElementById("pw").value;
-  var test = false;
   for (var i = 0; i < wordsList.length; i++) { 
-    if (userInput == wordsList[i]) { break; } 
-        test = true;   
-   }
-  if (test == true) {
-      document.getElementById("result").innerHTML = "Your password is too weak!";
-   } 
-  else if (test == false) {
-      document.getElementById("result").innerHTML = "Your password is strong!";
-   }
-  else {
-      document.getElementById("result").innerHTML = "Oops! Something went wrong..."; 
-   }
- } 
-  
+    if (userInput == wordsList[i]) {
+      document.getElementById("result").innerHTML = "This password is too weak!!!";
+      break;
+    } 
+    else {
+        document.getElementById("result").innerHTML = "Strong password!!!";
+    }
+  }
+}
+      
+    
