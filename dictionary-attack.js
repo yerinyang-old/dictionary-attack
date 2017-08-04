@@ -22,15 +22,14 @@ function checkPassword() {
   var userInput = document.getElementById("pw").value;
   var test = false;
   for (var i = 0; i < wordsList.length; i++) { 
-    if (userInput == wordsList[i]) {     
-        var test = true;
-        break;    
+    if (userInput == wordsList[i]) { break; } 
+        test = true;   
      }
    }
-  if (var test = true) {
+  if (test == true) {
       document.getElementById("result").innerHTML = "Your password is too weak!";
    } 
-  else if (var test = false) {
+  else if (test == false) {
       document.getElementById("result").innerHTML = "Your password is strong!";
    }
   else {
