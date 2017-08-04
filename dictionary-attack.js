@@ -25,10 +25,8 @@ function checkPassword() {
       document.getElementById("result").innerHTML = "This password is too weak!!!";
       break;
     } 
-    else {
-        document.getElementById("result").innerHTML = "Strong password!!!";
-    }
   }
+   document.getElementById("result").innerHTML = "Strong password!!!";
 }
       
     
